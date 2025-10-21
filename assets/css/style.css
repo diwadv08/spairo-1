@@ -73,7 +73,8 @@
   --gradient-danger: linear-gradient(135deg, var(--danger), #bb2d3b);
   --gradient-warning: linear-gradient(135deg, var(--warning), #ffca2c);
   --gradient-info: linear-gradient(135deg, var(--info), #31d2f2);
-  --bg-red-gradient:linear-gradient(145deg,#a80000be,#6d0000),url(../images/bg.png) fixed no-repeat;
+  --bg-red-gradient:linear-gradient(145deg,#b90000,#6d0000);
+  --bg-red-gradient-img:linear-gradient(145deg,#a80000be,#6d0000),url(../images/bg.png) fixed no-repeat;
 
   /* ===============================
      Sizes & Steps
@@ -1164,12 +1165,16 @@ textarea:focus {
 }
 @media (max-width:1400px) {
   .products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-group .btn{
+    padding:5px 10px;
+    font-size:13px;
   }
 }
 .card img {
   width: 100%;
-  height: 170px;
+  height: 140px;
   object-fit: cover;
 }
 .card .body {
@@ -1200,11 +1205,15 @@ textarea:focus {
 /* =========================================================
    CTA Band
 ========================================================= */
+.bg-red-gradient-img{
+  background:var(--bg-red-gradient-img);
+  background-size:cover;
+}
 .bg-red-gradient{
   background:var(--bg-red-gradient);
   background-size:cover;
-  border: none !important;;
 }
+
 
 .cta-band {
   padding:100px 0;

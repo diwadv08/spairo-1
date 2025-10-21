@@ -1861,7 +1861,7 @@ input:focus,textarea:focus,select:focus{
   border:none;
 }
 .card .myImg img{
-  height:220px;
+  height:160px;
   object-fit:fill;
   transition:.5s;
   filter:blur(0.2px);

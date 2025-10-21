@@ -883,6 +883,14 @@ nav a[aria-current="page"]::after{
     opacity: 1;
     visibility: visible;
   }
+
+  .top-nav .container-fluid {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .btn:hover{
@@ -1153,6 +1161,11 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+@media (max-width:1400px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .card img {
   width: 100%;

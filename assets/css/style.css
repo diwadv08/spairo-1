@@ -73,7 +73,7 @@
   --gradient-danger: linear-gradient(135deg, var(--danger), #bb2d3b);
   --gradient-warning: linear-gradient(135deg, var(--warning), #ffca2c);
   --gradient-info: linear-gradient(135deg, var(--info), #31d2f2);
-  --bg-red-gradient: linear-gradient(to right,#860000,#da0000);
+  --bg-red-gradient:linear-gradient(145deg,#a80000be,#6d0000),url(../images/bg.png) fixed no-repeat;
 
   /* ===============================
      Sizes & Steps
@@ -84,7 +84,7 @@
   --line-top: 37px;
   --title-margin-bottom: 5px;
   --h1-margin-bottom: 30px;
-  --step-description-font-size: 14px;
+  --step-description-font-size:17px;
   --step-transform-scale: 1.2;
 
   --hero-padding: 110px 0 84px;
@@ -899,7 +899,7 @@ nav a[aria-current="page"]::after{
   background:#8e1010;
 }
 .bg-odd{
-  background:var(--bg-light-red);
+  background:linear-gradient(to right,#ffdede9c,#ffecec95),url(../images/bg.jpg) fixed no-repeat;
 }
 .hero-grid {
   display: grid;
@@ -1188,7 +1188,7 @@ textarea:focus {
    CTA Band
 ========================================================= */
 .bg-red-gradient{
-  background:linear-gradient(145deg,#a80000be,#6d0000),url(../images/bg.png) center fixed no-repeat;
+  background:var(--bg-red-gradient);
   background-size:cover;
   border: none !important;;
 }
@@ -1273,7 +1273,7 @@ textarea:focus {
   font-size:34px;
   font-weight:600;
   border-radius:100px !important;
-  padding: 0.1rem 1rem;
+  padding: 0.05rem 1rem;
   cursor: pointer;
 }
 .modal-body {
@@ -1841,15 +1841,14 @@ input:focus,textarea:focus,select:focus{
   height:220px;
   object-fit:fill;
   transition:.5s;
-  transform:rotate(0deg);
-  filter:blur(1px) saturate(0);
+  filter:blur(0.2px);
 }
 .card .myImg{
   width:100%;
   overflow:hidden;
 }
 .card .myImg:hover img{
-  transform:scale(1.3) rotate(3deg);
+  transform:scale(1.3);
   filter:blur(0px) saturate(1.4);
 }
 .article-wrapper {

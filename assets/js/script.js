@@ -237,7 +237,7 @@
           <h3 class="post-title">${b.title}</h3>
           <div class="myImg"><img src="${b.cover}" alt="${b.title}" loading="lazy"/></div>
           <p class="muted">${b.excerpt}</p>
-          <a class="btn btn-outline-info rounded-circle" href="#" onclick="openPost(${b.id});return false;"><i class='fa fa-blog'></i>View Blog</a>
+          <a class="btn btn-outline-success rounded-circle" href="#" onclick="openPost(${b.id});return false;"><i class='fa fa-eye'></i>View Blog</a>
         </div>
       `;
       grid.appendChild(el);
